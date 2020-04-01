@@ -6,3 +6,8 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('author', 'text',)
+
+        labels = {
+        "author": "inicjator",
+        "text": "wypociny"
+            }

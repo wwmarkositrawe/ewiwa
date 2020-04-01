@@ -1,18 +1,15 @@
 {% load static %}
 <html>
     <head>
-   
-        <link rel="shortcut icon" href="{% static '/assets/favicon-32x32.png' %}" />
-   
+        <link rel="shortcut icon" href="{% static '/assets/favicon-32x32.png' %}" />   
         <link href='http://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Audiowide&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Amarante&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-        <title>miśnia</title>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        
-    </head>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+        <title>miśnia i maśnia</title>       
+        </head>
     <body>
         <div class="page-header">
             <a href="{% url 'post_new' %}" class="top-menu"><span class="">
@@ -23,12 +20,12 @@
                   </svg>
             </span></a>
             <h1><a href="/">prezentacja zależności
-                w konkursie czterech zgłośni</a></h1>        </div>
+                w konkursie czterech zgłośni</a></h1>        
+            </div>
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block content %}
-                
+                {% block content %}                
                 {% endblock %}
                 </div>
             </div>
