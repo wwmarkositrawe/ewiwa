@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import PostForm
+from django.http.response import HttpResponseRedirect
 
 def post_list(request):
     posts = Post.objects.all().order_by('-created_date')
@@ -9,7 +10,7 @@ def post_list(request):
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
+    return HttpResponseRedirect('/')
     
 
 
